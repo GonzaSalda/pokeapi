@@ -5,7 +5,7 @@ const CardPokemon = ({pokemon}) => {
   return (
     <>
       <Link to={`/pokemon/${pokemon.id}`}>
-      <div className={`${pokemon.types[0].type.name} h-full flex flex-col justify-evenly items-center`}>
+        <div className={`${pokemon.types[0].type.name} min-h-[250px] flex flex-col justify-evenly items-center`}>
           <img
             className="max-w-[80px]"
             src={pokemon.sprites.other.showdown.front_default}

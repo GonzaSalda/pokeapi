@@ -30,9 +30,7 @@ const HomePage = () => {
     </div>
     <PokemonList/>
     <FilterBar/>
-    <div className="container">
-      <button onClick={onClickLoadMore}>Cargar más</button>
-    </div>
+
     </>
   )
 }
