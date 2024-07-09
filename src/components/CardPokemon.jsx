@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const CardPokemon = ({ pokemon }) => {
+  const maxWeight = 1500; // Define a maximum value for weight
+  const maxHeight = 20; // Define a maximum value for height
   return (
     <>
       <Link to={`/pokemon/${pokemon.id}`}>
@@ -21,13 +23,13 @@ const CardPokemon = ({ pokemon }) => {
             <h2 className="capitalize text-xl font-semibold">{pokemon.name}</h2>
             <div className="flex gap-x-2">
               <p
-                className={`${pokemon.types[0].type.name} lg:p-4 rounded-full  badge badge-secondary capitalize font-semibold`}
+                className={`${pokemon.types[0].type.name} p-2 lg:p-4 rounded-full  badge badge-secondary capitalize font-semibold`}
               >
                 {pokemon.types[0].type.name}
               </p>
               {pokemon.types[1] && (
                 <p
-                  className={`${pokemon.types[0].type.name} lg:p-4 rounded-full badge badge-secondary capitalize font-semibold`}
+                  className={`${pokemon.types[0].type.name} p-2 lg:p-4 rounded-full badge badge-secondary capitalize font-semibold`}
                 >
                   {pokemon.types[1].type.name}
                 </p>
@@ -35,10 +37,26 @@ const CardPokemon = ({ pokemon }) => {
             </div>
           </div>
 
-          <div className="flex gap-x-2 items-center">
-            <p className="text-sm font-semibold">{pokemon.weight}KG</p>
-            <p className="text-sm font-semibold">0.{pokemon.height}m</p>
-          </div>
+           <div>
+        <label className="text-sm font-semibold">
+          Altura: 0.{pokemon.height}m
+        </label>
+        <progress
+          className="w-full h-2 bg-white-200 rounded"
+          value={pokemon.height}
+          max={maxHeight}
+        ></progress>
+      </div>
+      <div>
+        <label className="text-sm font-semibold">
+          Peso: {pokemon.weight}Kg
+        </label>
+        <progress
+          className="w-full h-2 bg-white-200 rounded"
+          value={pokemon.weight}
+          max={maxWeight}
+        ></progress>
+      </div>
         </div>
       </Link>
     </>

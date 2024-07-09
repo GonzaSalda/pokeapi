@@ -23,8 +23,6 @@ const PokemonProvider = ({ children }) => {
       `${baseURL}pokemon?limit=${limit}&offset=${offset}`
     );
     const data = await res.json();
-    console.log(data);
-
     const promises = data.results.map(async (pokemon) => {
       const res = await fetch(pokemon.url);
       const data = await res.json();
