@@ -25,6 +25,7 @@ export const Navigation = () => {
         <form onSubmit={handleSubmit}>
           <div>
             <input
+              className="outline-none border-none bg-gray-100 p-2 rounded-lg md:w-96"
               type="search"
               name="valueSearch"
               value={valueSearch}
