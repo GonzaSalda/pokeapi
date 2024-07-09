@@ -104,12 +104,14 @@ header form {
 	cursor: pointer;
 	font-weight: 500;
 	letter-spacing: 2px;
+
 }
 
 .btn-search:hover {
 	background-color: var(--color-primary-hover);
 	color: #000;
 }
+
 
 /* Btn Filter */
 .container-filter {
