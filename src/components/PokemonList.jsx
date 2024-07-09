@@ -23,7 +23,7 @@ const PokemonList = () => {
           ))}
           </>
         )}
-      <div className="col-span-3 flex justify-center mt-8">
+      <div className="col-span-3 flex justify-center m-6">
                 <button className='btn-load-more' onClick={onClickLoadMore}>
                     Cargar más
                 </button>
