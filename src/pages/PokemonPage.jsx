@@ -18,7 +18,7 @@ const PokemonPage = () => {
 
   return (
     <main className="container mx-auto flex justify-around my-6">
-      <div className=" max-w-sm bg-white border rounded-lg shadow-xl">
+      <div className="max-w-[250px] bg-white border rounded-lg shadow-xl">
 
         <div className="p-5 flex flex-col items-center">
         <img
@@ -26,7 +26,7 @@ const PokemonPage = () => {
           src={pokemon?.sprites?.other?.dream_world.front_default}
           alt=""
         />
-          <h1 className="mb-2 capitalize text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h1 className="mb-2 capitalize text-2xl font-bold tracking-tight text-gray-900">
             {pokemon.name}
           </h1>
           <div className="flex gap-x-2">
