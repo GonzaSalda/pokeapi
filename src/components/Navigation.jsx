@@ -10,6 +10,7 @@ export const Navigation = () => {
         e.preventDefault()
       //navigate al search
       navigate(`/search`, { state: valueSearch });
+      onResetForm();
     }
 
   return (
