@@ -7,7 +7,7 @@ const PokemonList = () => {
   const { allPokemons,filteredPokemons,onClickLoadMore} = useContext(PokemonContext);
   return (
     <>
-      <div className="container  grid grid-cols-1 md:grid-cols-3 gap-12 ">
+      <div className="container  grid grid-cols-1 md:grid-cols-3 md:gap-12 ">
         {
         filteredPokemons.length ? (
           <>

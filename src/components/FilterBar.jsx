@@ -1,12 +1,15 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { PokemonContext } from '../context/PokemonContext';
 
 export const FilterBar = () => {
 	const { active, handleCheckbox } = useContext(PokemonContext);
 
-	return (
-		<div className={`container-filters ${active ? 'active' : ''}`}>
-			<div className='filter-by-type'>
+	return  (
+		<>
+
+		<div className={`container-filters ${active ? 'active' : ''} overflow-y-scroll scrollbar `}>
+			
+			<div className='filter-by-type p-2 '>
 				<span>Tipo</span>
 
 				<div className='group-type'>
@@ -173,6 +176,8 @@ export const FilterBar = () => {
 				</div>
 			</div>
 		</div>
+		
+		 </>
 	);
 };
 

@@ -282,12 +282,13 @@ header form {
 .filter-by-type {
 	display: flex;
 	flex-direction: column;
-
-	gap: 20px;
+	align-items: flex-start;
+	justify-content: center;
+	gap:12px;
 }
 
 .filter-by-type span {
-	font-weight: 700;
+	font-weight: auto;
 	font-size: 22px;
 }
 
@@ -453,3 +454,25 @@ Styles of Pokemon Single Page
 	background-color: var(--color-primary-hover);
 	color: #000;
 }
+
+/*SCROLL BAR */
+
+.scrollbar::-webkit-scrollbar {
+	width: 12px;
+  }
+  
+  .scrollbar::-webkit-scrollbar-track {
+	background: #f1f1f1;
+	border-radius: 10px;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb {
+	background-color: #4A5568; /* color del pulgar de la scrollbar */
+	border-radius: 10px;
+	border: 3px solid #f1f1f1;
+  }
+  
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+	background-color: #2D3748; /* color del pulgar de la scrollbar al pasar el cursor */
+  }
+  
