@@ -32,7 +32,7 @@ export const Navigation = () => {
               placeholder="Buscar nombre de pokemon"
             />
           </div>
-          <button type="submit" className="btn-search">Buscar</button>{" "}
+          <button type="submit" className="btn-search">Buscar</button>
         </form>
       </header>
       <Outlet />
