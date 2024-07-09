@@ -14,11 +14,11 @@ const CardPokemon = ({pokemon}) => {
           <div className="flex flex-col gap-2 items-center">
             <h2 className="capitalize text-xl font-semibold">{pokemon.name}</h2>
             <div className="flex gap-x-2">
-            <p className="badge badge-secondary capitalize font-semibold">
+            <p className={`${pokemon.types[0].type.name} p-4 rounded-full  badge badge-secondary capitalize font-semibold`}>
               {pokemon.types[0].type.name}
             </p>
             {pokemon.types[1] && (
-              <p className="badge badge-secondary capitalize font-semibold">
+              <p className={`${pokemon.types[0].type.name} p-4 rounded-full badge badge-secondary capitalize font-semibold`}>
                 {pokemon.types[1].type.name}
               </p>
                        )}

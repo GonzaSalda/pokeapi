@@ -17,8 +17,8 @@ const PokemonPage = () => {
   }, []);
 
   return (
-    <main className="container mx-auto flex justify-around">
-      <div className=" max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <main className="container mx-auto flex justify-around my-6">
+      <div className=" max-w-sm bg-white border rounded-lg shadow-xl">
 
         <div className="p-5 flex flex-col items-center">
         <img
