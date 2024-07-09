@@ -67,6 +67,8 @@ const PokemonProvider = ({ children }) => {
     getGlobalPokemons();
   }, []);
 
+
+
   // Filter Function + State
 	const [typeSelected, setTypeSelected] = useState({
 		grass: false,
@@ -117,6 +119,19 @@ const PokemonProvider = ({ children }) => {
 			setfilteredPokemons([...filteredResults]);
 		}
 	};
+
+  useEffect(() => {
+    if (valueSearch) {
+      const filteredResults = globalPokemons.filter((pokemon) =>
+        pokemon.name.toLowerCase().includes(valueSearch.toLowerCase())
+      );
+      setfilteredPokemons(filteredResults);
+    } else {
+      setfilteredPokemons(allPokemons);
+    }
+  }, [valueSearch, globalPokemons, allPokemons]);
+
+
 
 
     /* Btn cargar más */
