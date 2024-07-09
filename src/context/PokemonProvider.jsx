@@ -16,7 +16,7 @@ const PokemonProvider = ({ children }) => {
   });
 
   /* LLamar pokemons con limite */
-  const getAllPokemons = async (limit = 9) => {
+  const getAllPokemons = async (limit = 8) => {
     const baseURL = "https://pokeapi.co/api/v2/";
 
     const res = await fetch(
@@ -134,7 +134,7 @@ const PokemonProvider = ({ children }) => {
 
     /* Btn cargar más */
     const onClickLoadMore = () =>{
-        setOffset(offset + 9)
+        setOffset(offset + 8)
         
     }
 

@@ -9,7 +9,7 @@ const PokemonList = () => {
   return (
     <>
       <div className="container mx-auto lg:px-0">
-        <div className="max-w-sm mx-auto lg:max-w-none lg:mx-0 grid grid-cols-2  gap-4 lg:grid-cols-3 lg:gap-12">
+        <div className="max-w-sm mx-auto lg:max-w-none lg:mx-0 grid grid-cols-2  gap-4 lg:grid-cols-4 lg:gap-12">
           {filteredPokemons.length ? (
             <>
               {filteredPokemons.map((pokemon) => (
@@ -23,7 +23,7 @@ const PokemonList = () => {
               ))}
             </>
           )}
-          <div className="col-span-2 lg:col-span-3 flex justify-center m-6">
+          <div className="col-span-2 lg:col-span-4 flex justify-center m-6">
             <button className="btn-load-more" onClick={onClickLoadMore}>
               Cargar más
             </button>
