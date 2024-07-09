@@ -15,7 +15,7 @@ export const Navigation = () => {
 
   return (
     <>
-      <header className="container flex flex-col gap-y-4">
+      <header className="container  flex lg:flex-row  flex-col gap-y-4">
         <Link to="/" className="logo">
           <img
             src="https://archives.bulbagarden.net/media/upload/4/4b/Pok%C3%A9dex_logo.png"
